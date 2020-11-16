@@ -10,4 +10,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/p
 sed -i "s/ZSH_THEME=.*/ZSH_THEME=\"powerlevel10k\/powerlevel10k\"/g" ~/.zshrc
 sed -i "s/#ENABLE_CORRECTION.*/ENABLE_CORRECTION=\"true\"/g" ~/.zshrc
 sed -i "s/plugins=.*/plugins=(git zsh-autosuggestions zsh-syntax-highlighting)/g" ~/.zshrc
+mkdir -p ~/.local/share/fonts
+wget -O "~/.local/share/fonts/Droid Sans Mono for Powerline Nerd Font Complete.otf" https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete.otf
 echo "POWERLEVEL9K_MODE=\"nerdfont-complete\"" >> ~/.zshrc
